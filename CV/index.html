@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Motion Detection</title>
+    <style>
+    div{
+      padding: 2px;
+    }
+    video{
+      float: left;
+      display: none;
+    }
+    section{
+      float: left;
+    }
+    </style>
+  </head>
+  <body>
+    <button id="detection">Detection</button>
+    <button id="background">Background</button>
+    <button id="bgreyscale">Test</button><br>
+
+    <div>
+      <video autoplay></video>
+
+      <section>
+        <h3>Canvas Video</h3>
+        <canvas id="canvas"></canvas>
+      </section>
+      <section>
+        <h3>Hasil</h3>
+        <canvas id="hasil"></canvas>
+      </section>
+      <section>
+        <h3>Background static</h3>
+        <canvas id="cbackground"></canvas>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript" src="process.js"></script>
+  </body>
+</html>
